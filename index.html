@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mordiscos · Snacks saludables para perros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap">
+<a href="#inicio"><img src="img/logo.png" alt="Mordiscos"></a>
+<nav><a href="#nosotros">Mordiscos</a><a href="#productos">Productos</a><a href="#nutricion">Nutrición</a><a href="#conservacion">Conservación</a><a class="cta" href="#calculadora">Calculadora</a></nav>
+</div></header>
+
+<main>
+<div class="hero" id="inicio"><div class="wrap">
+<div>
+<span class="tag">🐾 Snacks horneados para perros</span>
+<h1>Premios que cuidan a tu perro</h1>
+<p>Galletas y bizcochos caseros, con ingredientes simples y sin sal, azúcar ni conservantes artificiales. Hechos para cada etapa y tamaño de tu mejor amigo.</p>
+<div class="btns"><a class="btn p" href="#calculadora">Calcular peso ideal</a><a class="btn" href="#productos">Ver productos</a></div>
+</div>
+<div class="imgs"><img src="img/carne-adulto.jpg" alt="Galleta con carne de res y calabaza Mordiscos"><img src="img/vegetariana-adulto.jpg" alt="Galleta vegetariana de calabaza y zanahoria Mordiscos"></div>
+</div></div>
+
+<section id="nosotros"><div class="wrap about">
+<div>
+<span class="tag">Quiénes somos</span>
+<h2>¿Qué es Mordiscos?</h2>
+<p>Mordiscos es una marca de snacks saludables para perros en Tegucigalpa. Creemos que el premio también puede ser nutritivo: usamos avena, calabaza, camote, zanahoria, manzana, banano y carnes cocidas sin sal ni condimentos.</p>
+<p>Tenemos dos líneas, <b>vegetariana</b> y <b>con carne</b>, y una receta pensada para cada tipo de perro: cachorro, adulto, raza pequeña, raza grande, senior y sensibilidad digestiva.</p>
+<div class="no"><span>🚫 Sin sal</span><span>🚫 Sin azúcar</span><span>🚫 Sin xilitol</span><span>🚫 Sin cebolla ni ajo</span><span>🚫 Sin chocolate</span></div>
+</div>
+<div class="grid3" style="grid-template-columns:1fr 1fr">
+<div class="card"><span class="ic">🥣</span><h3>Ingredientes simples</h3><p>Pocos ingredientes que puedes reconocer.</p></div>
+<div class="card"><span class="ic">🔥</span><h3>Horneado fresco</h3><p>Sin conservantes artificiales.</p></div>
+<div class="card"><span class="ic">🐕</span><h3>Para cada perro</h3><p>6 recetas según etapa y tamaño.</p></div>
+<div class="card"><span class="ic">⚖️</span><h3>Porción medida</h3><p>Un complemento, no un reemplazo.</p></div>
+</div>
+</div></section>
+
+<section class="alt" id="productos"><div class="wrap">
+<span class="tag">Nuestros productos</span>
+<h2>Dos líneas, un snack para cada perro</h2>
+<div class="lines">
+<div class="line v"><h3>🌿 Línea vegetariana</h3>Avena, huevo y vegetales o fruta.<div class="chips"><span>Galleta</span><span>Bizcocho</span><span>Cachorro</span><span>Adulto</span><span>Pequeña</span><span>Grande</span><span>Senior</span><span>Digestiva</span></div></div>
+<div class="line c"><h3>🍖 Línea con carne</h3>Pollo, pavo o res cocidos y sin grasa.<div class="chips"><span>Galleta</span><span>Bizcocho</span><span>Cachorro</span><span>Adulto</span><span>Pequeña</span><span>Grande</span><span>Senior</span><span>Digestiva</span></div></div>
+</div>
+<h3 style="font-size:1.5rem">Productos del lanzamiento (PMV)</h3>
+<div class="prods">
+<div class="prod"><img src="img/vegetariana-cachorro.jpg" alt="Banano y zanahoria cachorro"><div><small>Vegetariana · Cachorro</small><h3>Banano y zanahoria</h3><p>Galleta blanda y húmeda, ideal para encías en crecimiento. Bolsa de 300 g.</p></div></div>
+<div class="prod"><img src="img/vegetariana-adulto.jpg" alt="Calabaza y zanahoria adulto"><div><small>Vegetariana · Adulto</small><h3>Calabaza y zanahoria</h3><p>Galleta crujiente con fibra y sabor suave. Bolsa de 300 g.</p></div></div>
+<div class="prod"><img src="img/carne-adulto.jpg" alt="Res y calabaza adulto"><div><small>Con carne · Adulto</small><h3>Res y calabaza</h3><p>Galleta crujiente con res cocida, proteína y mucho sabor. Bolsa de 300 g.</p></div></div>
+</div>
+<p class="pilot">Las demás recetas se irán sumando después del lote piloto.</p>
+</div></section>
+
+<section id="calculadora"><div class="wrap">
+<span class="tag">Calculadora</span>
+<h2>Peso ideal y snack recomendado</h2>
+<p style="color:var(--mute);max-width:640px;margin-bottom:28px">Cuéntanos de tu perro y te decimos si está en su peso ideal, cuántos snacks puede comer al día y qué producto Mordiscos le conviene.</p>
+<div class="calc">
+<div class="card"><form id="f">
+<label class="full">Nombre de tu perro<input id="n" placeholder="Ej: Max" maxlength="30"></label>
+<label>Tamaño de raza adulta<select id="sz"><option value="p">Pequeña (menos de 10 kg)</option><option value="m" selected>Mediana (10 a 25 kg)</option><option value="g">Grande (más de 25 kg)</option></select></label>
+<label>Edad<div class="row"><input id="ed" type="number" min="1" max="240" value="3" required><select id="eu" style="max-width:100px"><option value="a">años</option><option value="m">meses</option></select></div></label>
+<label>Peso actual (kg)<input id="w" type="number" min="0.5" max="90" step="0.1" placeholder="Ej: 12.5" required></label>
+<label>Cómo se ve su cuerpo<select id="b"><option value="3">Muy delgado: costillas muy marcadas</option><option value="4">Delgado: costillas fáciles de ver</option><option value="5" selected>Ideal: costillas se sienten sin presionar</option><option value="7">Sobrepeso: costillas difíciles de sentir</option><option value="9">Obesidad: sin cintura, abdomen caído</option></select></label>
+<label>Esterilizado<select id="st"><option value="1">Sí</option><option value="0">No</option></select></label>
+<label>Actividad<select id="ac"><option value="-0.2">Baja</option><option value="0" selected>Normal</option><option value="0.2">Alta</option></select></label>
+<label>Preferencia<select id="pr"><option value="x">Sin preferencia</option><option value="c">Con carne</option><option value="v">Vegetariana</option></select></label>
+<label>Formato<select id="fm"><option value="g">Galleta</option><option value="b">Bizcocho</option></select></label>
+<label>Alergia a<select id="al"><option value="">Ninguna conocida</option><option value="ave">Pollo o pavo</option><option value="res">Res</option></select></label>
+<label class="chk full"><input type="checkbox" id="sd"> Tiene sensibilidad digestiva</label>
+<button class="btn p full" type="submit">Calcular</button>
+</form></div>
+<div class="card" id="res"><div class="empty"><b>🐶</b>Llena los datos y aquí verás el resultado.</div></div>
+</div>
+</div></section>
+
+<section class="alt" id="nutricion"><div class="wrap">
+<span class="tag">Tabla nutricional</span>
+<h2>¿Cuánto snack al día?</h2>
+<p style="color:var(--mute);max-width:680px">Los snacks son un complemento: máximo el <b>10 %</b> de las calorías diarias. Valores estimados para un perro adulto esterilizado con actividad normal.</p>
+<div class="tw"><table><thead><tr><th>Peso ideal</th><th>Energía diaria</th><th>Máximo en snacks (10 %)</th><th>Producto sugerido</th><th>Piezas al día</th></tr></thead><tbody id="tb"></tbody></table></div>
+<div class="tips">
+<div class="card"><h3>⚖️ Cómo dar los premios</h3><ul><li>Repártelos en el día, no todos juntos.</li><li>Si hoy comió más premios, baja un poco su comida.</li><li>Cachorros: se calcula con su peso actual.</li></ul></div>
+<div class="card"><h3>🐕 Perro con sobrepeso</h3><ul><li>Prefiere la línea vegetariana.</li><li>Usa la porción de su peso ideal.</li><li>Consulta a tu veterinario para un plan.</li></ul></div>
+<div class="card"><h3>⚠️ Alérgenos</h3><ul><li>Todos los productos llevan huevo.</li><li>Los bizcochos llevan yogur natural.</li><li>El pavo es ave: si hay alergia al pollo, consulta al veterinario.</li></ul></div>
+</div>
+</div></section>
+
+<section id="conservacion"><div class="wrap">
+<span class="tag">Conservación</span>
+<h2>Cómo cuidar tus Mordiscos</h2>
+<p style="color:var(--mute);max-width:640px;margin-bottom:26px">No llevan conservantes artificiales, así que dura menos que un snack industrial. Así se mantienen frescos.</p>
+<div class="store">
+<div class="card"><span class="big">7–10 días</span><h3>Galletas vegetarianas</h3><p>En envase hermético, en un lugar fresco y seco, lejos del sol.</p></div>
+<div class="card"><span class="big">5–7 días</span><h3>Con carne y bizcochos</h3><p>Refrigerados en envase hermético.</p></div>
+<div class="card"><span class="big">2–3 meses</span><h3>Congelados</h3><p>Congela las galletas con carne y los bizcochos. Descongela solo lo que vas a usar.</p></div>
+</div>
+<div class="tips">
+<div class="card"><h3>✅ Buenas prácticas</h3><ul><li>Cierra bien la bolsa después de cada uso.</li><li>Déjalos enfriar por completo antes de guardarlos.</li><li>Las galletas blandas (cachorro y senior) se refrigeran.</li></ul></div>
+<div class="card"><h3>🚩 Descarta si…</h3><ul><li>Notas moho o manchas.</li><li>Huelen agrio o raro.</li><li>Pasó su tiempo de consumo.</li></ul></div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><img src="img/logo-claro.png" alt="Mordiscos"><p>Snacks saludables para perros.<br>Tegucigalpa, Honduras.</p></div>
+<div><h4>Explora</h4><a href="#nosotros">Qué es Mordiscos</a><a href="#productos">Productos</a><a href="#calculadora">Calculadora</a><a href="#conservacion">Conservación</a></div>
+<div><h4>Síguenos</h4><div class="soc"><span>Instagram · próximamente</span><span>TikTok · próximamente</span><span>Facebook · próximamente</span></div></div>
+</div><div class="copy">© 2026 Mordiscos. La calculadora es una guía; ante dudas de salud, consulta a tu veterinario.</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
